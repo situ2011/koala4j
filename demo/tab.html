@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tab</title>
+	<style>
+		body, ul, li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		.kl-tab {
+			position: relative;
+			width: 300px;
+			height: 200px;
+			background: #ffcccc;
+		}
+
+		.kl-tab ul {
+			height: 30px;
+			line-height: 30px;
+		}
+
+		.kl-tab ul li {
+			padding: 0 15px;
+			float: left;
+		}
+
+		.kl-tab ul li.on {
+			background: red;
+		}
+
+		.kl-tab .wrap div  {
+			position: absolute;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="kl-tab">
+		<ul class="nav">
+			<li class="on">tab1</li>
+			<li>tab2</li>
+			<li>tab3</li>
+		</ul>
+		<div class="wrap">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="kl-tab" data-hover="true">
+		<ul class="nav">
+			<li>tab11</li>
+			<li>tab21</li>
+			<li>tab31</li>
+		</ul>
+		<div class="wrap">
+			<div>div11</div>
+			<div>div21</div>
+			<div>div31</div>
+		</div>
+	</div>
+
+	<script src="../lib/jquery-1.11.1.js"></script>
+	<script src="../lib/koala4j.js"></script>
+</body>
+</html>
+
+<!--
+usage:
+1) kl-tab
+2) data-hover="true"(鼠标悬停切换，默认为点击切换)
+-->
