@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	第一步：
+	<a href="getQueryStr.html?a=111&b=222&c=333">修改url</a>
+	<hr>
+	第二步：输入参数键
+	<input id="key" type="text">
+	<hr>
+	<button>测试</button>
+
+	<script src="../lib/jquery-1.11.1.js"></script>
+	<script src="../lib/koala4j.js"></script>
+	<script>
+	$('button').on('click', function () {
+		var r = kl.getQueryString( $('#key').val() );
+		alert( r );
+	});
+	</script>
+</body>
+</html>
